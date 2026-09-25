@@ -1,0 +1,1349 @@
+1:"$Sreact.fragment"
+2:I[9766,[],""]
+3:I[8924,[],""]
+4:I[1402,["177","static/chunks/app/layout-7d818afa0e1f032b.js"],""]
+b:I[7150,[],""]
+:HL["/_next/static/css/1455cd70e79cf107.css","style"]
+5:T66a,  window.addEventListener('error', function(e){
+    var b = document.getElementById('errorBanner'), m = document.getElementById('errorBannerMsg');
+    if(b && m){ m.textContent = 'App Error: ' + (e.message||'unknown') + ' (' + (e.filename||'') + ':' + (e.lineno||'') + ')'; b.classList.remove('hidden'); }
+  });
+  window.addEventListener('unhandledrejection', function(e){
+    var b = document.getElementById('errorBanner'), m = document.getElementById('errorBannerMsg');
+    if(b && m){ m.textContent = 'App Error (async): ' + (e.reason && e.reason.message ? e.reason.message : String(e.reason)); b.classList.remove('hidden'); }
+  });
+
+  // Browsers pause/throttle rendering for background tabs. If a modal was closed right
+  // before the person switched tabs, the browser can hold onto a stale painted frame and
+  // only "catch up" (repaint) when the tab becomes visible again — which is exactly what
+  // made the dark overlay reappear after switching tabs and coming back. Force every modal
+  // that isn't supposed to be open back to properly hidden the moment the tab regains focus.
+  document.addEventListener('visibilitychange', function(){
+    if (document.visibilityState === 'visible') {
+      ['activityDetailModal','submitConfirmModal','deleteModal','textPromptModal'].forEach(function(id){
+        var el = document.getElementById(id);
+        if (el && el.classList.contains('hidden')) {
+          // re-assert hidden to force a fresh repaint in the correct state
+          el.classList.remove('hidden');
+          void el.offsetHeight; // force reflow
+          el.classList.add('hidden');
+        }
+      });
+    }
+  });
+0:{"P":null,"b":"aKq6XNeZHJq0mRZWrA5sH","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1455cd70e79cf107.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"gu","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[[["$","link","/seed-members-data.js?v=a13696c0c9",{"rel":"preload","as":"script","href":"/seed-members-data.js?v=a13696c0c9"}],["$","link","/legacy/app.js?v=a13696c0c9",{"rel":"preload","as":"script","href":"/legacy/app.js?v=a13696c0c9"}]],["$","script",null,{"src":"https://cdn.tailwindcss.com"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\ntailwind.config = {\n  theme: {\n    extend: {\n      fontFamily: { sans: ['Outfit', 'sans-serif'] },\n      colors: {\n        crm: {\n          bg: '#f7f2f3', card: '#ffffff',\n          primary: '#5a0616', primaryHover: '#450410',\n          secondary: '#8c2138',\n          textDark: '#2a1013', textMuted: '#7a5a5f', border: '#ecdfe1'\n        }\n      },\n      boxShadow: { 'crm': '0 2px 15px rgba(90, 6, 22, 0.05)', 'crm-hover': '0 8px 25px rgba(90, 6, 22, 0.12)' }\n    }\n  }\n}\n"}}],["$","link",null,{"rel":"stylesheet","href":"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"className":"bg-crm-bg text-crm-textDark h-screen flex overflow-hidden font-sans selection:bg-red-100","suppressHydrationWarning":true,"children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{"id":"onesignal-init","strategy":"afterInteractive","dangerouslySetInnerHTML":{"__html":"\n  window.OneSignalDeferred = window.OneSignalDeferred || [];\n  OneSignalDeferred.push(async function(OneSignal){\n    await OneSignal.init({ appId: \"db189d35-8188-445e-8e5e-7e54506a6913\" });\n  });\n"}}],["$","$L4",null,{"src":"https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js","strategy":"afterInteractive"}],["$","$L4",null,{"src":"https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js","strategy":"afterInteractive"}]]}]]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$5"}}],"$L6","$L7","$L8"],null,"$L9"]}],{},null,false]},null,false],"$La",false]],"m":"$undefined","G":["$b",[]],"s":false,"S":true}
+e:I[8718,["974","static/chunks/app/page-282b0ffaf16df60d.js"],"default"]
+f:I[4431,[],"OutletBoundary"]
+11:I[5278,[],"AsyncMetadataOutlet"]
+13:I[4431,[],"ViewportBoundary"]
+15:I[4431,[],"MetadataBoundary"]
+16:"$Sreact.suspense"
+c:T14253,<div id="toast"><i class="fas fa-check-circle text-emerald-400 mr-2"></i> <span id="toastMsg">Action completed successfully!</span></div>
+<div id="errorBanner" class="hidden" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#b91c1c;color:#fff;padding:10px 16px;font-size:12px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.2)">
+  <span id="errorBannerMsg"></span>
+  <button onclick="document.getElementById('errorBanner').classList.add('hidden')" style="margin-left:10px;background:rgba(255,255,255,.2);border:none;color:#fff;padding:2px 10px;border-radius:6px;font-size:11px">Close</button>
+</div>
+
+<div id="globalDropdown" class="hidden"></div>
+<div id="customSelectPanel" class="hidden fixed z-[1000] bg-white border border-crm-border rounded-xl shadow-xl" style="min-width:180px;max-width:min(92vw,420px);padding:6px;"></div>
+<div id="globalDatePicker" class="hidden fixed z-[200] bg-white border border-crm-border rounded-xl shadow-xl p-3" style="width:260px;">
+  <div class="flex items-center justify-between gap-1 mb-2">
+    <button type="button" onclick="dpChangeMonth(-1)" class="w-6 h-6 rounded hover:bg-slate-100 text-crm-textMuted shrink-0"><i class="fas fa-chevron-left text-[10px]"></i></button>
+    <select id="dpMonthSelect" onchange="dpSelectMonth(this.value)" class="no-custom-dropdown text-xs font-semibold text-crm-textDark border border-crm-border rounded px-1 py-1" style="flex:1.3;min-width:0;font-family:inherit;"></select>
+    <select id="dpYearSelect" onchange="dpSelectYear(this.value)" class="no-custom-dropdown text-xs font-semibold text-crm-textDark border border-crm-border rounded px-1 py-1" style="flex:1;min-width:0;font-family:inherit;"></select>
+    <button type="button" onclick="dpChangeMonth(1)" class="w-6 h-6 rounded hover:bg-slate-100 text-crm-textMuted shrink-0"><i class="fas fa-chevron-right text-[10px]"></i></button>
+  </div>
+  <div id="dpGrid" class="grid grid-cols-7 gap-1 text-[11px] text-center"></div>
+  <button type="button" onclick="clearDatePicker()" class="w-full mt-2 text-[11px] text-crm-textMuted hover:text-crm-primary">Clear</button>
+</div>
+
+<!-- ============ AUTH SCREEN (Sign Up / Sign In) ============ -->
+<div id="initLoadingScreen" class="z-[300]" style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-dark) 100%);">
+  <div style="display:flex;flex-direction:column;align-items:center;gap:16px">
+    <div style="width:44px;height:44px;border:4px solid rgba(255,255,255,.25);border-top-color:#fff;border-radius:50%;animation:spin 0.8s linear infinite;"></div>
+    <p style="color:#fff;font-size:14px;font-weight:500">Loading Yuva Sabha Dashboard…</p>
+  </div>
+</div>
+
+<div id="authScreen" class="hidden z-[200]" style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:16px;background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-dark) 100%);">
+  <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl fade-in" style="max-height:calc(100vh - 32px); overflow-y:auto;">
+    <div class="px-6 pt-6 pb-4 text-center border-b border-crm-border">
+      <div class="w-14 h-14 mx-auto rounded-xl bg-red-50 text-crm-primary flex items-center justify-center text-2xl mb-2"><i class="fas fa-users"></i></div>
+      <h1 class="text-lg font-semibold text-crm-textDark">Yuva Sabha</h1>
+      <p class="text-xs text-crm-textMuted">Member Registry Access</p>
+    </div>
+
+    <div class="flex border-b border-crm-border">
+      <button id="authTabSignin" onclick="switchAuthTab('signin')" class="flex-1 py-3 text-sm font-medium text-crm-primary border-b-2 border-crm-primary">Sign In</button>
+      <button id="authTabSignup" onclick="switchAuthTab('signup')" class="flex-1 py-3 text-sm font-medium text-crm-textMuted border-b-2 border-transparent">Sign Up</button>
+    </div>
+
+    <!-- SIGN IN PANEL -->
+    <div id="authSignin" class="p-6 space-y-4">
+      <div class="rec-field">
+        <label>I am a<span class="req">*</span></label>
+        <select id="loginRole" onchange="onLoginRoleChange()">
+          <option value="ઝોન પ્રેસિડન્ટ">ઝોન પ્રેસિડન્ટ</option>
+          <option value="રીજીયન હેડ">રીજીયન હેડ</option>
+          <option value="સંચાલક">સંચાલક</option>
+          <option value="સહસંચાલક">સહસંચાલક</option>
+          <option value="પોષક લીડર">પોષક લીડર</option>
+          <option value="યુવા સભ્ય" selected>યુવા સભ્ય</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+      <div class="rec-field" id="loginEmailWrap">
+        <label>Mobile Number / SMK Number / Email<span class="req">*</span></label>
+        <input id="loginEmail" type="text" placeholder="Enter your mobile number, SMK number, or email" onkeydown="if(event.key==='Enter') doLogin()">
+      </div>
+      <div class="rec-field" id="loginPasswordWrap">
+        <label>Password<span class="req">*</span></label>
+        <div class="relative">
+          <input id="loginPassword" type="password" placeholder="Enter your password" class="pr-11" onkeydown="if(event.key==='Enter') doLogin()">
+          <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('loginPassword', this)"></i>
+        </div>
+      </div>
+      <div id="adminPasswordWrap" class="rec-field hidden">
+        <label>Admin Password<span class="req">*</span></label>
+        <div class="relative">
+          <input id="adminPassword" type="password" placeholder="Enter admin password" class="pr-11" onkeydown="if(event.key==='Enter') doLogin()">
+          <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('adminPassword', this)"></i>
+        </div>
+      </div>
+      <button id="sendOtpBtn" onclick="doLogin()" class="w-full bg-crm-primary hover:bg-crm-primaryHover text-white text-sm font-medium py-2.5 rounded-lg shadow-crm transition">Login</button>
+      <p class="text-center"><a href="#" onclick="showForgotPasswordInfo(); return false;" class="text-sm text-crm-primary hover:underline">Forgot Password?</a></p>
+      <p id="authSigninError" class="text-xs text-red-600 hidden"></p>
+    </div>
+
+    <!-- SIGN UP PANEL -->
+    <div id="authSignup" class="hidden p-6 space-y-4">
+      <div class="rec-field">
+        <label>I am a<span class="req">*</span></label>
+        <select id="suRole">
+          <option value="ઝોન પ્રેસિડન્ટ">ઝોન પ્રેસિડન્ટ</option>
+          <option value="રીજીયન હેડ">રીજીયન હેડ</option>
+          <option value="સંચાલક">સંચાલક</option>
+          <option value="સહસંચાલક">સહસંચાલક</option>
+          <option value="પોષક લીડર">પોષક લીડર</option>
+          <option value="યુવા સભ્ય" selected>યુવા સભ્ય</option>
+        </select>
+      </div>
+      <div class="grid grid-cols-3 gap-2">
+        <div class="rec-field"><label>First Name<span class="req">*</span></label><input id="suFirstName" placeholder="First name"></div>
+        <div class="rec-field"><label>Father's Name<span class="req">*</span></label><input id="suFatherName" placeholder="Father's name"></div>
+        <div class="rec-field"><label>Last Name<span class="req">*</span></label><input id="suLastName" placeholder="Last name"></div>
+      </div>
+      <div class="rec-field">
+        <label>SMK Number <span class="text-crm-textMuted font-normal">(if you have one)</span></label>
+        <input id="suSmk" placeholder="Enter your SMK number, if you have one" autocomplete="off">
+      </div>
+      <div class="rec-field">
+        <label>Mobile Number<span class="req">*</span></label>
+        <input id="suMobile" type="tel" placeholder="10-digit mobile number" onkeydown="if(event.key==='Enter') document.getElementById('suEmail').focus()">
+      </div>
+      <div class="rec-field">
+        <label>Email<span class="req">*</span></label>
+        <input id="suEmail" type="email" placeholder="you@example.com" onkeydown="if(event.key==='Enter') document.getElementById('suPassword').focus()">
+      </div>
+      <div class="rec-field">
+        <label>Password<span class="req">*</span></label>
+        <div class="relative">
+          <input id="suPassword" type="password" placeholder="Set a password" class="pr-11" onkeydown="if(event.key==='Enter') document.getElementById('suConfirmPassword').focus()">
+          <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('suPassword', this)"></i>
+        </div>
+      </div>
+      <div class="rec-field">
+        <label>Confirm Password<span class="req">*</span></label>
+        <div class="relative">
+          <input id="suConfirmPassword" type="password" placeholder="Re-enter the same password" class="pr-11" onkeydown="if(event.key==='Enter') doSignup()">
+          <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('suConfirmPassword', this)"></i>
+        </div>
+      </div>
+      <button onclick="doSignup()" class="w-full bg-crm-primary hover:bg-crm-primaryHover text-white text-sm font-medium py-2.5 rounded-lg shadow-crm transition">Sign Up</button>
+      <p id="authSignupError" class="text-xs text-red-600 hidden"></p>
+    </div>
+  </div>
+</div>
+
+<!-- FORCED PASSWORD CHANGE — shown after an existing member logs in with the shared default password -->
+
+<div id="mustChangePasswordScreen" class="hidden z-[200]" style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(255,255,255,0.35);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);">
+  <div class="bg-white rounded-2xl shadow-2xl w-full" style="max-width:420px">
+    <div class="text-center pt-8 pb-4 px-6">
+      <div class="w-14 h-14 mx-auto rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-2"><i class="fas fa-key"></i></div>
+      <h1 class="text-lg font-semibold text-crm-textDark">Set a New Password</h1>
+      <p class="text-xs text-crm-textMuted">For security, please set your own password before continuing.</p>
+    </div>
+    <div class="p-6 space-y-4">
+      <div class="rec-field">
+        <label>New Password<span class="req">*</span></label>
+        <div class="relative">
+          <input id="mcpNewPassword" type="password" placeholder="Set a password (at least 4 characters)" class="pr-11" onkeydown="if(event.key==='Enter') document.getElementById('mcpConfirmPassword').focus()">
+          <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('mcpNewPassword', this)"></i>
+        </div>
+      </div>
+      <div class="rec-field">
+        <label>Confirm New Password<span class="req">*</span></label>
+        <div class="relative">
+          <input id="mcpConfirmPassword" type="password" placeholder="Re-enter the same password" class="pr-11" onkeydown="if(event.key==='Enter') submitMustChangePassword()">
+          <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('mcpConfirmPassword', this)"></i>
+        </div>
+      </div>
+      <button onclick="submitMustChangePassword()" class="w-full bg-crm-primary hover:bg-crm-primaryHover text-white text-sm font-medium py-2.5 rounded-lg shadow-crm transition">Set Password &amp; Continue</button>
+      <p id="mcpError" class="text-xs text-red-600 hidden"></p>
+    </div>
+  </div>
+</div>
+
+<!-- CENTER-SCREEN SAVE CONFIRMATION -->
+<div id="saveSuccessPopup" class="hidden" style="position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;padding:16px;pointer-events:none;">
+  <div class="bg-white rounded-2xl shadow-2xl text-center px-8 py-7 fade-in" style="max-width:340px; pointer-events:auto;">
+    <div class="w-16 h-16 mx-auto rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-3xl mb-3">
+      <i class="fas fa-check"></i>
+    </div>
+    <h2 class="text-base font-semibold text-crm-textDark" id="saveSuccessPopupTitle">Saved!</h2>
+    <p class="text-xs text-crm-textMuted mt-1" id="saveSuccessPopupMsg"></p>
+  </div>
+</div>
+
+<!-- CENTER-SCREEN SAVE ERROR — stays on screen until dismissed, so it's impossible to
+     miss and easy for anyone (technical or not) to notice and screenshot. -->
+<div id="saveErrorPopup" class="hidden" style="position:fixed;inset:0;z-index:301;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,0.45);">
+  <div class="bg-white rounded-2xl shadow-2xl text-center px-8 py-7 fade-in" style="max-width:380px;">
+    <div class="w-16 h-16 mx-auto rounded-full bg-red-50 text-red-600 flex items-center justify-center text-3xl mb-3">
+      <i class="fas fa-triangle-exclamation"></i>
+    </div>
+    <h2 class="text-base font-semibold text-crm-textDark">Save Failed</h2>
+    <p class="text-sm text-crm-textDark mt-2" id="saveErrorPopupMsg"></p>
+    <p class="text-xs text-crm-textMuted mt-2">Please take a screenshot of this message and show it to the admin.</p>
+    <button onclick="document.getElementById('saveErrorPopup').classList.add('hidden')" class="mt-4 px-5 py-2 bg-crm-primary hover:bg-crm-primaryHover text-white rounded-lg text-sm font-medium">OK</button>
+  </div>
+</div>
+
+<div id="appRoot" class="hidden w-full h-screen flex">
+<!-- Sidebar -->
+<aside id="sidebar" class="w-64 shrink-0 h-screen flex flex-col overflow-hidden transition-all duration-300" style="background: linear-gradient(180deg, var(--maroon) 0%, var(--maroon-dark) 100%);">
+  <div class="flex items-center gap-3 px-5 py-6 border-b border-white/10">
+    <div id="sidebarLogoBox" class="w-10 h-10 rounded-xl bg-white flex items-center justify-center shrink-0 shadow p-1.5">
+      <img id="sidebarTilakImg" src="/images/img-6750e7d28b.png" alt="Swaminarayan tilak chandlo" class="w-full h-full object-contain">
+    <img id="sidebarUserPhoto" class="hidden w-full h-full object-cover rounded-full" src="" alt="">
+    </div>
+    <div class="flex-1 min-w-0">
+      <div class="text-white font-semibold text-[15px] leading-tight whitespace-nowrap">Yuva Sabha</div>
+      <div class="text-white/40 text-[10px] uppercase tracking-wider mt-0.5 whitespace-nowrap">Member Registry</div>
+    </div>
+    <button onclick="toggleSidebar()" title="Close sidebar" class="w-8 h-8 rounded-lg hover:bg-white/10 flex items-center justify-center text-white/60 hover:text-white shrink-0 transition">
+      <i class="fas fa-angles-left text-sm"></i>
+    </button>
+  </div>
+  <nav class="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
+    <div class="nav-link" id="navDashboard" onclick="switchModule('dashboard')"><i class="fas fa-gauge-high w-4"></i> Dashboard</div>
+    <div class="nav-link active" id="navMembers" onclick="switchModule('members'); toggleMembersSubmenu();">
+      <i class="fas fa-users w-4"></i> Members
+      <i class="fas fa-chevron-down ml-auto text-[10px] transition-transform" id="membersSubmenuChevron"></i>
+    </div>
+    <div id="membersSubmenuWrap" class="hidden pl-6">
+      <div class="nav-link hidden" id="navMasters" onclick="switchModule('masters')" style="font-size:13px"><i class="fas fa-list-check w-4"></i> Masters</div>
+      <div class="nav-link hidden" id="navMemberReports" onclick="switchModule('memberReports')" style="font-size:13px"><i class="fas fa-chart-column w-4"></i> Member Reports</div>
+    </div>
+    <div class="nav-link hidden" id="navSevaSamiti" onclick="switchModule('sevasamiti')"><i class="fas fa-hands-helping w-4"></i> Seva Samiti</div>
+    <div class="nav-link hidden" id="navTree" onclick="switchModule('tree')"><i class="fas fa-sitemap w-4"></i> Tree</div>
+    <div class="nav-link" id="navYSC" onclick="switchModule('ysc')"><i class="fas fa-book-open w-4"></i> Yuva Sabha-C</div>
+    <div class="nav-link hidden" id="navNotifications" onclick="switchModule('notifications')"><i class="fas fa-bell w-4"></i> Notifications <span id="notifBadge" class="hidden ml-auto bg-red-500 text-white text-[10px] font-bold rounded-full px-1.5 py-0.5">0</span></div>
+    <div class="nav-link hidden" id="navApprovals" onclick="switchModule('approvals')"><i class="fas fa-clipboard-check w-4"></i> Request Approvals <span id="approvalsBadge" class="hidden ml-auto bg-red-500 text-white text-[10px] font-bold rounded-full px-1.5 py-0.5">0</span></div>
+    <div class="nav-link hidden" id="navUsers" onclick="switchModule('users')"><i class="fas fa-id-badge w-4"></i> Users Permission</div>
+        <div class="nav-link" id="navActivity" onclick="switchModule('activity')"><i class="fas fa-clock-rotate-left w-4"></i> Activity Log</div>
+    <div class="nav-link hidden" id="navReporting" onclick="switchModule('reporting')"><i class="fas fa-file-lines w-4"></i> Reporting</div>
+    <div class="nav-link" id="navChangePassword" onclick="switchModule('changepassword')"><i class="fas fa-key w-4"></i> Change Password</div>
+  </nav>
+  <div class="px-3 pb-2">
+    <div class="nav-link" id="navLogout" onclick="logoutUser()"><i class="fas fa-right-from-bracket w-4"></i> <span id="logoutLabel">Logout</span></div>
+  </div>
+  <div class="px-2 pb-3 grid grid-cols-4 gap-1" id="sidebarStatsWrap">
+    <div class="bg-white/10 rounded-lg text-center py-1.5 px-0.5">
+      <div class="text-white font-semibold text-xs" id="sbTotal">0</div>
+      <div class="text-white/40 leading-tight uppercase" style="font-size:7px">Total</div>
+    </div>
+    <div class="bg-white/10 rounded-lg text-center py-1.5 px-0.5">
+      <div class="text-white font-semibold text-xs" id="sbYuvaMember">0</div>
+      <div class="text-white/40 leading-tight uppercase" style="font-size:7px">Yuva</div>
+    </div>
+    <div class="bg-white/10 rounded-lg text-center py-1.5 px-0.5">
+      <div class="text-white font-semibold text-xs" id="sbPoshakLeader">0</div>
+      <div class="text-white/40 leading-tight uppercase" style="font-size:7px">Poshak</div>
+    </div>
+    <div class="bg-white/10 rounded-lg text-center py-1.5 px-0.5">
+      <div class="text-white font-semibold text-xs" id="sbOtherLeader">0</div>
+      <div class="text-white/40 leading-tight uppercase" style="font-size:7px">Other</div>
+    </div>
+  </div>
+  <div class="px-5 py-3 border-t border-white/10 text-white/30 text-[10px]">© Yuva Sabha Dashboard</div>
+</aside>
+
+<!-- Main -->
+<div class="flex-1 flex flex-col h-screen overflow-hidden" id="mainColumnWrapper">
+  <div id="birthdayRibbon" class="hidden items-center gap-2 px-4 py-2 text-xs sm:text-sm font-medium text-white" style="background:linear-gradient(90deg,#c8952a,#e0ac3e)"></div>
+  <header class="min-h-16 shrink-0 bg-white border-b border-crm-border flex flex-wrap items-center justify-between gap-3 px-3 sm:px-6 py-2.5 shadow-sm" id="topHeader">
+    <div class="flex items-center gap-3 min-w-0">
+      <button onclick="toggleSidebar()" id="openSidebarBtn" title="Open sidebar" class="hidden w-9 h-9 rounded-lg hover:bg-slate-100 items-center justify-center text-crm-textMuted shrink-0">
+        <i class="fas fa-bars text-sm"></i>
+      </button>
+      <div class="min-w-0">
+        <h1 class="text-base sm:text-lg font-semibold text-crm-textDark truncate" id="pageTitle">Member Registry</h1>
+        <p class="text-[11px] sm:text-xs text-crm-textMuted truncate" id="headerSub">Loading members…</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-2 sm:gap-3 flex-wrap" id="addBtnWrap">
+      <div id="searchbar" class="relative flex-1 min-w-[140px] sm:min-w-0">
+        <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-crm-textMuted text-xs"></i>
+        <input id="searchInput" oninput="renderTable()" type="text" placeholder="Search…"
+          class="pl-8 pr-3 py-2 rounded-lg border border-crm-border text-sm w-full sm:w-64 outline-none focus:border-crm-primary focus:ring-2 focus:ring-red-50">
+      </div>
+      <button onclick="openRecord('add')" class="bg-crm-primary hover:bg-crm-primaryHover text-white text-sm font-medium px-4 py-2 rounded-lg shadow-crm flex items-center gap-2 transition">
+        <i class="fas fa-plus text-xs"></i> <span id="addBtnLabel">Add Member</span>
+      </button>
+    </div>
+    <button id="topSaveAccessBtn" onclick="saveAccess()" class="hidden px-4 py-2 bg-crm-primary hover:bg-crm-primaryHover text-white rounded-lg text-xs font-medium shadow-sm transition-all items-center gap-2">
+      <i class="fas fa-check-circle"></i> Save Access
+    </button>
+  </header>
+
+  <main class="flex-1 overflow-y-auto p-4 sm:p-8">
+
+    <!-- ============ DASHBOARD OVERVIEW ============ -->
+    <div id="dashboardView" class="hidden fade-in">
+      <!-- KPI TILES -->
+      <div class="dsb-kpis" id="dashKpiRow"></div>
+
+      <!-- SABHA STATUS STRIP -->
+      <div class="dsb-card" style="padding:0;margin-bottom:20px">
+        <div class="dsb-head"><span class="dsb-head-ic" style="background:#f6e7ea;color:#5a0616"><i class="fas fa-house-user"></i></span> Sabha Status <span class="dsb-head-sub">family membership</span></div>
+        <div class="dsb-strip" id="dashSabhaStatus"></div>
+      </div>
+
+      <!-- MURTIBAAG + SCORE -->
+      <div class="dsb-g2">
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#e5f6ef;color:#0d9459"><i class="fas fa-hand-holding-heart"></i></span> Murtibaag Seva Status <span class="dsb-head-sub" id="dashMurtiSub"></span></div>
+          <div class="dsb-body" id="dashMurtibaag"></div>
+        </div>
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#fdf3e0;color:#c8952a"><i class="fas fa-star"></i></span> Sadhana Score <span class="dsb-head-sub">પૂજા + કથા + ચેષ્ટા + સદગ્રંથ + શિબિર</span></div>
+          <div class="dsb-body dsb-donut-row">
+            <svg width="150" height="150" viewBox="0 0 160 160" id="dashScoreDonut"></svg>
+            <div class="dsb-legend" id="dashScoreLegend"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POSHAK SEVA + AGE -->
+      <div class="dsb-g2">
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#e6f2f7;color:#0e7490"><i class="fas fa-user-tie"></i></span> Poshak Leader — Seva Involvement <span class="dsb-head-sub" id="dashPoshakSevaTotal"></span></div>
+          <div class="dsb-body" id="dashPoshakSeva"></div>
+        </div>
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#fdeee7;color:#c2410c"><i class="fas fa-cake-candles"></i></span> Age Status <span class="dsb-head-sub">single age (years)</span></div>
+          <div class="dsb-body"><div class="dsb-cols" id="dashAge" style="height:158px"></div></div>
+        </div>
+      </div>
+
+      <!-- BUSINESS / WORK STATUS — full width -->
+      <div class="dsb-card" style="padding:0;margin-bottom:20px">
+        <div class="dsb-head"><span class="dsb-head-ic" style="background:#f6e7ea;color:#5a0616"><i class="fas fa-briefcase"></i></span> Business / Work Status <span class="dsb-head-sub" id="dashWorkSub"></span></div>
+        <div class="dsb-strip" id="dashWorkStrip"></div>
+        <div class="dsb-work-divider"><span>વિગતવાર (Detailed Breakdown)</span></div>
+        <div class="dsb-body dsb-work-detail" id="dashWorkDetail"></div>
+      </div>
+
+      <!-- SKILLS + SAMITI -->
+      <div class="dsb-g2 dsb-g2-equal">
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#f0ebfa;color:#7c3aed"><i class="fas fa-wand-magic-sparkles"></i></span> Skills Distribution</div>
+          <div class="dsb-body" id="dashSkills"></div>
+        </div>
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#f6e7ea;color:#5a0616"><i class="fas fa-people-group"></i></span> Seva Samiti <span class="dsb-head-sub" id="dashSamitiSub"></span></div>
+          <div class="dsb-body" id="dashSamiti"></div>
+        </div>
+      </div>
+
+      <!-- STUDY + SATSANG -->
+      <div class="dsb-g2">
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#e6f2f7;color:#0e7490"><i class="fas fa-graduation-cap"></i></span> Study Status</div>
+          <div class="dsb-body" id="dashStudy"></div>
+        </div>
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#fdf3e0;color:#c8952a"><i class="fas fa-seedling"></i></span> Satsang Experience</div>
+          <div class="dsb-body" id="dashSatsang"></div>
+        </div>
+      </div>
+
+      <!-- HOUSE + BLOOD + SABHA YEARS (all compact) -->
+      <div class="dsb-g3" style="margin-bottom:8px">
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#e5f6ef;color:#0d9459"><i class="fas fa-house-chimney"></i></span> House Type</div>
+          <div class="dsb-body" id="dashHouse"></div>
+        </div>
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#fbe8e8;color:#b91c1c"><i class="fas fa-droplet"></i></span> Blood Groups</div>
+          <div class="dsb-body dsb-blood" id="dashBlood"></div>
+        </div>
+        <div class="dsb-card">
+          <div class="dsb-head"><span class="dsb-head-ic" style="background:#e5f6ef;color:#0d9459"><i class="fas fa-calendar-check"></i></span> Sabha Years</div>
+          <div class="dsb-body" id="dashSabhaYrs"></div>
+        </div>
+      </div>
+
+      
+
+      <!-- MONTHLY BIRTHDAYS -->
+      <div class="dsb-card" style="padding:0;margin-bottom:8px">
+        <div class="dsb-head"><span class="dsb-head-ic" style="background:#fdf3e0;color:#c8952a"><i class="fas fa-cake-candles"></i></span> Monthly Birthdays <span class="dsb-head-sub" id="dashBdaySub"></span></div>
+        <div id="dashBdayList" class="dsb-bday-scroll"></div>
+      </div>
+    </div>
+
+    <!-- ============ MASTERS (ADMIN ONLY) ============ -->
+    <div id="mastersView" class="hidden fade-in">
+      <div style="max-width:680px;margin:0 auto">
+        <div class="mb-4">
+          <h2 class="text-base font-semibold text-crm-textDark">Masters</h2>
+          <p class="text-xs text-crm-textMuted mt-0.5">Add or remove dropdown options for these fields — no code changes needed.</p>
+        </div>
+
+        <!-- Custom Fields creator -->
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border p-5 mb-4">
+          <h3 class="text-sm font-semibold text-crm-textDark mb-1">Add a New Field</h3>
+          <p class="text-xs text-crm-textMuted mb-4">Add it to an existing tab (Personal, Study, Sadhana…), or create a whole new tab.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-medium text-crm-textMuted mb-1">Field Title</label>
+              <input type="text" id="cfNewLabel" placeholder="e.g. Income" class="w-full border border-crm-border rounded-lg px-3 py-2 text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-crm-textMuted mb-1">Field Type</label>
+              <select id="cfNewType" onchange="onCfTypeChange()" class="w-full border border-crm-border rounded-lg px-3 py-2 text-sm">
+                <option value="text">Text</option>
+                <option value="alnum">Text &amp; Digits</option>
+                <option value="digits">Digits Only</option>
+                <option value="mobile">Mobile Number Only</option>
+                <option value="email">Email</option>
+                <option value="date">Date / Calendar</option>
+                <option value="video">Video (Link)</option>
+                <option value="dropdown">Dropdown (Single-Select)</option>
+                <option value="multiselect">Multi-Select Dropdown</option>
+                <option value="radio">Radio Button</option>
+                <option value="textarea">Long Text (Paragraph)</option>
+              </select>
+            </div>
+            <div id="cfNewOptionsWrap" class="hidden md:col-span-2">
+              <label class="block text-xs font-medium text-crm-textMuted mb-1" id="cfNewOptionsLabel">Dropdown Options</label>
+              <div id="cfPendingOptionsChips" class="flex flex-wrap gap-2 mb-2"></div>
+              <div class="flex gap-2">
+                <input type="text" id="cfNewOptionInput" placeholder="Type an option and press Enter…"
+                  class="flex-1 border border-crm-border rounded-lg px-3 py-2 text-sm"
+                  onkeydown="if(event.key==='Enter'){ event.preventDefault(); addPendingCfOption(); }">
+                <button type="button" onclick="addPendingCfOption()" class="bg-slate-100 text-crm-textDark text-sm font-medium px-3 py-2 rounded-lg hover:bg-slate-200 shrink-0">
+                  <i class="fas fa-plus text-[10px] mr-1"></i>Add
+                </button>
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-crm-textMuted mb-1">Add To</label>
+              <select id="cfNewTarget" onchange="onCfTargetChange()" class="w-full border border-crm-border rounded-lg px-3 py-2 text-sm"></select>
+            </div>
+            <div id="cfNewTabNameWrap" class="hidden">
+              <label class="block text-xs font-medium text-crm-textMuted mb-1">New Tab Name</label>
+              <input type="text" id="cfNewTabName" placeholder="e.g. Income Details" class="w-full border border-crm-border rounded-lg px-3 py-2 text-sm">
+            </div>
+          </div>
+          <button type="button" id="cfCreateBtn" onclick="createCustomField()" class="mt-4 bg-crm-primary text-white text-sm font-medium px-4 py-2 rounded-lg hover:opacity-90">
+            <i class="fas fa-plus text-[10px] mr-1.5"></i>Create Field
+          </button>
+        </div>
+
+        <!-- Master list table -->
+        <div id="mastersTableWrap" class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+          <table class="w-full crm-table" style="table-layout:fixed">
+            <thead><tr>
+              <th style="width:12%">Sr.</th>
+              <th style="width:53%">Title</th>
+              <th style="width:35%">Actions</th>
+            </tr></thead>
+            <tbody id="mastersTableBody"></tbody>
+          </table>
+        </div>
+
+        <!-- Master detail (options list for whichever field was clicked) -->
+        <div id="masterDetailWrap" class="hidden bg-white rounded-2xl shadow-crm border border-crm-border p-5">
+          <button type="button" onclick="closeMasterDetail()" class="text-sm text-crm-textMuted hover:text-crm-primary flex items-center gap-1.5 mb-4">
+            <i class="fas fa-arrow-left text-xs"></i> Back to List
+          </button>
+          <h3 class="text-sm font-semibold text-crm-textDark mb-4" id="masterDetailTitle"></h3>
+          <div id="masterDetailOptionsList" class="space-y-2 mb-4"></div>
+          <div class="flex gap-2" id="masterDetailAddRow">
+            <input type="text" id="masterDetailAddInput" placeholder="Type a new option and press Enter…"
+              class="flex-1 border border-crm-border rounded-lg px-3 py-2 text-sm"
+              onkeydown="if(event.key==='Enter'){ event.preventDefault(); addMasterOption(document.getElementById('masterDetailWrap').dataset.key, this); }">
+            <button type="button" onclick="addMasterOption(document.getElementById('masterDetailWrap').dataset.key, document.getElementById('masterDetailAddInput'))"
+              class="bg-crm-primary text-white text-sm font-medium px-4 py-2 rounded-lg hover:opacity-90 shrink-0">
+              <i class="fas fa-plus text-[10px] mr-1.5"></i>Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ MEMBER REPORTS (ADMIN ONLY) ============ -->
+    <div id="memberReportsView" class="hidden fade-in">
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border p-4 mb-4">
+        <div class="flex flex-wrap items-center gap-3 justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-medium text-crm-textMuted">Show:</span>
+            <div class="flex rounded-lg border border-crm-border overflow-hidden" id="mrRoleScopeTabs">
+              <button type="button" onclick="setMrRoleScope('all')" data-scope="all" class="mr-scope-btn px-3 py-1.5 text-xs font-medium">All Members</button>
+              <button type="button" onclick="setMrRoleScope('yuva')" data-scope="yuva" class="mr-scope-btn px-3 py-1.5 text-xs font-medium border-l border-crm-border">Yuva Member</button>
+              <button type="button" onclick="setMrRoleScope('poshak')" data-scope="poshak" class="mr-scope-btn px-3 py-1.5 text-xs font-medium border-l border-crm-border">Poshak Leader</button>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-crm-textMuted" id="mrResultCount"></span>
+            <button type="button" onclick="clearMrFilters()" class="px-3 py-1.5 rounded-lg text-xs font-medium border border-crm-border hover:bg-slate-50"><i class="fas fa-rotate-left text-[10px] mr-1"></i>Clear Filters</button>
+            <div class="relative">
+              <button type="button" onclick="toggleMrExportMenu()" class="px-3 py-1.5 rounded-lg text-xs font-medium text-white bg-crm-primary hover:bg-crm-primaryHover flex items-center gap-1.5"><i class="fas fa-download text-[10px]"></i> Export <i class="fas fa-caret-down text-[10px]"></i></button>
+              <div id="mrExportMenu" class="hidden absolute right-0 mt-1 w-40 bg-white rounded-lg shadow-lg border border-crm-border z-20 overflow-hidden">
+                <div onclick="exportMrCSV()" class="px-3 py-2 text-xs hover:bg-slate-50 cursor-pointer flex items-center gap-2"><i class="fas fa-file-csv text-emerald-600 w-3"></i> CSV</div>
+                <div onclick="exportMrExcel()" class="px-3 py-2 text-xs hover:bg-slate-50 cursor-pointer flex items-center gap-2"><i class="fas fa-file-excel text-emerald-700 w-3"></i> Excel</div>
+                <div onclick="exportMrPDF()" class="px-3 py-2 text-xs hover:bg-slate-50 cursor-pointer flex items-center gap-2"><i class="fas fa-file-pdf text-red-600 w-3"></i> PDF</div>
+                <div onclick="shareMrReport()" class="px-3 py-2 text-xs hover:bg-slate-50 cursor-pointer flex items-center gap-2 border-t border-crm-border"><i class="fas fa-share-nodes text-crm-primary w-3"></i> Share</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid gap-4" style="grid-template-columns:280px 1fr; align-items:start">
+        <!-- FILTERS SIDEBAR -->
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden" style="max-height:calc(100vh - 220px); display:flex; flex-direction:column">
+          <div class="px-4 py-3 border-b border-crm-border flex items-center justify-between shrink-0">
+            <span class="text-sm font-semibold text-crm-textDark"><i class="fas fa-filter text-xs text-crm-primary mr-1.5"></i>Filters</span>
+          </div>
+          <div id="mrFiltersPanel" class="overflow-y-auto flex-1 divide-y divide-crm-border"></div>
+
+          <div class="border-t border-crm-border shrink-0">
+            <div class="px-4 py-3 flex items-center justify-between cursor-pointer" onclick="toggleMrColumnPicker()">
+              <span class="text-sm font-semibold text-crm-textDark"><i class="fas fa-table-columns text-xs text-crm-primary mr-1.5"></i>Columns</span>
+              <i class="fas fa-chevron-down text-[10px] text-crm-textMuted" id="mrColPickerChevron"></i>
+            </div>
+            <div id="mrColumnPicker" class="hidden max-h-72 overflow-y-auto px-4 pb-3 divide-y divide-crm-border"></div>
+          </div>
+        </div>
+
+        <!-- RESULTS TABLE -->
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+          <div class="overflow-x-auto" style="max-height:calc(100vh - 220px)">
+            <table class="w-full crm-table" id="mrResultsTable">
+              <thead id="mrTableHead"></thead>
+              <tbody id="mrTableBody"></tbody>
+            </table>
+          </div>
+          <div class="flex flex-col items-center gap-2 px-5 py-5 border-t border-crm-border text-xs text-crm-textMuted" id="mrPaginationWrap"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ USERS PERMISSION (ADMIN ONLY) ============ -->
+    <div id="usersView" class="hidden fade-in space-y-5">
+      <div>
+        <h2 class="text-base font-semibold text-crm-textDark">Team &amp; Permissions</h2>
+        <p class="text-xs text-crm-textMuted mt-0.5">Select a Poshak Leader below, then set their module access.</p>
+      </div>
+
+      <!-- Employee selector card -->
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border p-5 md:p-6 perm-outer-box perm-emp-box">
+        <div class="perm-emp-grid">
+          <div class="rec-field">
+            <label>Poshak Leader<span class="req">*</span></label>
+            <div class="flex items-center gap-2">
+              <select id="permEmployeeSelect" onchange="onPermEmployeeChange()" class="flex-1">
+                <option value="">Select Poshak Leader...</option>
+              </select>
+              <span id="permEmployeeId" class="perm-id-badge">SMK: —</span>
+            </div>
+          </div>
+          <div class="rec-field">
+            <label>Email (used to login)</label>
+            <div class="flex items-center gap-2">
+              <input id="permEmployeeEmail" type="text" placeholder="name@company.com" disabled class="flex-1">
+              <button id="permResetSignupBtn" onclick="resetPoshakSignup()" title="Clear their signed-up email/password so they can sign up fresh" class="px-3 py-2 rounded-lg text-xs font-medium text-crm-primary bg-red-50 hover:bg-crm-primary hover:text-white shrink-0 whitespace-nowrap transition-colors" disabled>
+                <i class="fas fa-rotate-left text-[10px]"></i> Reset Signup
+              </button>
+            </div>
+          </div>
+          <div class="rec-field">
+            <label>Mobile</label>
+            <input id="permEmployeeMobile" type="text" placeholder="+91XXXXXXXXXX" disabled>
+          </div>
+          <div class="rec-field">
+            <label>Role</label>
+            <select id="permEmployeeRole" disabled>
+              <option>Poshak Leader</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module Access & Permissions card -->
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden perm-outer-box">
+        <div class="perm-card-head">
+          <div class="flex items-center gap-2">
+            <i class="fas fa-shield-halved" style="color:var(--maroon)"></i>
+            <h3 class="text-sm font-semibold text-crm-textDark">Module Access &amp; Permissions</h3>
+          </div>
+          <p class="text-xs text-crm-textMuted mt-1">Tick what the selected Poshak Leader can do in each module.</p>
+        </div>
+        <div class="table-responsive-wrapper overflow-x-auto">
+          <table class="perm-table">
+            <colgroup>
+              <col class="perm-col-module">
+              <col class="perm-col-action">
+              <col class="perm-col-action">
+              <col class="perm-col-action">
+              <col class="perm-col-action">
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="text-left">Module</th>
+                <th>Access</th>
+                <th>Add</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="permModuleGrid"></tbody>
+          </table>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- ============ APPROVALS (admin only) ============ -->
+    <div id="approvalsView" class="hidden fade-in">
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+        <div class="table-responsive-wrapper overflow-x-auto">
+          <table class="w-full crm-table">
+            <thead><tr>
+              <th>#</th><th>Module</th><th>Who</th><th>Changed Fields</th><th>Submitted</th><th class="text-right">Action</th>
+            </tr></thead>
+            <tbody id="approvalsTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ACTIVITY LOG ============ -->
+    <div id="activityView" class="hidden fade-in space-y-5">
+      <div id="activityStats"></div>
+      <div class="flex justify-end" id="clearActivityLogWrap">
+        <button onclick="confirmClearActivityLog()" class="text-xs font-medium text-red-500 hover:text-red-700 flex items-center gap-1.5">
+          <i class="fas fa-trash text-[10px]"></i> Clear Activity Log
+        </button>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+        <div class="table-responsive-wrapper overflow-x-auto">
+          <table class="w-full crm-table">
+            <thead><tr>
+              <th>#</th>
+              <th class="relative">
+                <span class="inline-flex items-center gap-1.5">Date &amp; Time
+                  <i class="fas fa-filter text-[10px] cursor-pointer text-crm-textMuted hover:text-crm-primary" onclick="toggleActivityFilterPopover('date', event)"></i>
+                </span>
+                <div id="activityDateFilterPopover" class="hidden absolute left-0 top-full mt-1 z-20 bg-white border border-crm-border rounded-lg shadow-lg p-3 normal-case font-normal">
+                  <div class="ddmy-wrap">
+                    <input type="hidden" id="activityFilterDate" value="">
+                    <input type="text" id="activityFilterDateDisplay" class="ddmy-display" readonly placeholder="DD/MM/YYYY" onclick="openDatePicker(this, 'renderActivityLog')">
+                    <i class="fas fa-calendar-alt ddmy-icon"></i>
+                  </div>
+                  <button onclick="document.getElementById('activityFilterDate').value='';document.getElementById('activityFilterDateDisplay').value='';renderActivityLog()" class="block mt-2 text-[11px] text-crm-textMuted hover:text-crm-primary">Clear</button>
+                </div>
+              </th>
+              <th class="relative">
+                <span class="inline-flex items-center gap-1.5">Name
+                  <i class="fas fa-filter text-[10px] cursor-pointer text-crm-textMuted hover:text-crm-primary" onclick="toggleActivityFilterPopover('name', event)"></i>
+                </span>
+                <div id="activityNameFilterPopover" class="hidden absolute left-0 top-full mt-1 z-20 bg-white border border-crm-border rounded-lg shadow-lg p-3 normal-case font-normal w-56">
+                  <input type="text" id="activityNameFilterSearch" oninput="filterActivityNameOptions(this.value)" placeholder="Search name…" class="w-full text-xs px-2 py-1.5 border border-crm-border rounded mb-2 outline-none focus:border-crm-primary">
+                  <div id="activityFilterNamesList" class="space-y-1 max-h-44 overflow-y-auto"></div>
+                  <button onclick="clearActivityNameFilter()" class="block mt-2 text-[11px] text-crm-textMuted hover:text-crm-primary">Clear</button>
+                </div>
+              </th>
+              <th>Role</th><th>Action</th>
+            </tr></thead>
+            <tbody id="activityTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ NOTIFICATIONS ============ -->
+    <div id="notificationsView" class="hidden fade-in space-y-5">
+      <div id="notifComposer" class="bg-white rounded-2xl shadow-crm border border-crm-border p-6">
+        <h4 class="text-base font-semibold text-crm-textDark mb-4 flex items-center gap-2"><i class="fas fa-paper-plane text-crm-primary"></i> Send Notification</h4>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div>
+            <div class="grid grid-cols-2 gap-3 mb-4">
+              <div class="form-field">
+                <label>Date</label>
+                <div class="ddmy-wrap">
+                  <input type="hidden" id="notifDate" value="">
+                  <input type="text" id="notifDateDisplay" class="ddmy-display" readonly placeholder="DD/MM/YYYY" onclick="openDatePicker(this)">
+                  <i class="fas fa-calendar-alt ddmy-icon"></i>
+                </div>
+              </div>
+              <div class="form-field">
+                <label>Time</label>
+                <input type="time" id="notifTime">
+              </div>
+            </div>
+            <p class="text-[11px] font-semibold text-crm-textMuted uppercase mb-2">Message</p>
+            <textarea id="notifMessage" rows="6" placeholder="Type your message…" oninput="renderNotifPreview()" class="w-full border border-crm-border rounded-xl p-3 text-sm outline-none focus:border-crm-primary focus:ring-2 focus:ring-red-50"></textarea>
+          </div>
+
+          <div>
+            <p class="text-[11px] font-semibold text-crm-textMuted uppercase mb-2">Preview</p>
+            <div class="bg-slate-50 rounded-xl p-3 h-[calc(100%-28px)] flex items-start">
+              <div id="notifPreviewCard" class="bg-white border border-crm-border rounded-lg px-3.5 py-3 flex gap-3 w-full">
+                <i class="fas fa-bell text-crm-primary/60 mt-0.5"></i>
+                <div class="flex-1">
+                  <p class="text-sm text-crm-textDark" id="notifPreviewText">Your message will appear here as you type…</p>
+                  <p class="text-[11px] text-crm-textMuted mt-1" id="notifPreviewTime">Just now</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border p-6">
+        <div class="flex items-center justify-between mb-1 flex-wrap gap-3">
+          <div class="flex items-center gap-2">
+            <i class="fas fa-user-check text-crm-primary text-sm"></i>
+            <h4 class="text-sm font-semibold text-crm-textDark">Recipients</h4>
+          </div>
+          <button onclick="sendNotification()" class="px-5 py-2 rounded-xl text-sm font-medium text-white bg-crm-primary hover:bg-crm-primaryHover shadow-crm transition flex items-center gap-2">
+            <i class="fas fa-paper-plane text-xs"></i> Send
+          </button>
+        </div>
+        <p class="text-xs text-crm-textMuted mb-3">Tick "All" to select everyone in a group, or tick individual names to send personally.</p>
+
+        <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+          <div id="notifMastersRow" class="flex flex-wrap gap-2"></div>
+          <div class="relative w-full sm:w-56">
+            <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-crm-textMuted text-xs"></i>
+            <input type="text" id="notifSearchInput" oninput="filterNotifRecipients(this.value)" placeholder="Search names…"
+              class="pl-8 pr-3 py-1.5 rounded-lg border border-crm-border text-xs w-full outline-none focus:border-crm-primary focus:ring-2 focus:ring-red-50">
+          </div>
+        </div>
+
+        <div class="border border-crm-border rounded-xl px-3 py-1.5 max-h-[320px] overflow-y-auto">
+          <div id="notifSpecificList" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3"></div>
+          <p id="notifNoResults" class="hidden text-center text-xs text-crm-textMuted py-6">No names match your search.</p>
+        </div>
+      </div>
+
+      
+
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+        <div class="px-5 pt-4 pb-2">
+          <h4 class="text-sm font-semibold text-crm-textDark" id="notifListTitle">Notifications</h4>
+        </div>
+        <div id="notifList" class="divide-y divide-crm-border"></div>
+      </div>
+    </div>
+
+    <!-- ============ SEVA SAMITI ============ -->
+    <!-- ============ CHANGE PASSWORD ============ -->
+    <div id="changePasswordView" class="hidden fade-in">
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border p-10 max-w-2xl mx-auto">
+        <div class="form-field mb-6">
+          <label class="flex items-center gap-2 mb-1.5">Old Password <i id="cpOldCheckIcon" class="fas fa-check-circle text-emerald-500 hidden"></i></label>
+          <div class="relative">
+            <input type="password" id="cpOldPassword" oninput="validateOldPassword()" placeholder="Enter your current password" class="pr-11 py-3 text-base">
+            <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('cpOldPassword', this)"></i>
+          </div>
+        </div>
+
+        <div class="form-field mb-6">
+          <label class="mb-1.5 block">New Password</label>
+          <div class="relative">
+            <input type="password" id="cpNewPassword" placeholder="Enter new password" class="pr-11 py-3 text-base">
+            <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('cpNewPassword', this)"></i>
+          </div>
+        </div>
+
+        <div class="form-field mb-2">
+          <label class="mb-1.5 block">Confirm New Password</label>
+          <div class="relative">
+            <input type="password" id="cpConfirmPassword" oninput="validateCpConfirm()" placeholder="Re-enter new password" class="pr-11 py-3 text-base">
+            <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('cpConfirmPassword', this)"></i>
+          </div>
+        </div>
+        <p id="cpConfirmError" class="hidden text-xs text-red-600 mb-6">Passwords do not match.</p>
+
+        <button onclick="submitChangePassword()" class="w-full bg-crm-primary hover:bg-crm-primaryHover text-white text-base font-semibold py-3.5 rounded-lg shadow-crm transition mt-4">Change Password</button>
+
+        <p class="text-center mt-5"><a href="#" onclick="showForgotPasswordInfo(); return false;" class="text-sm text-crm-primary hover:underline">Forgot Password?</a></p>
+      </div>
+
+      
+    </div>
+
+    <!-- ============ SEVA SAMITI — LIST OF FORMS ============ -->
+    <!-- ============ ORGANIZATION TREE ============ -->
+    <!-- ============ YUVA SABHA-C — LIST OF TITLES ============ -->
+    <div id="yscListView" class="hidden fade-in">
+      <div style="max-width:680px;margin:0 auto">
+        <div id="yscAddNewWrap" class="hidden flex justify-end mb-3">
+          <button onclick="promptAddYscTitle()" class="px-3 py-2 rounded-lg text-xs font-medium text-crm-primary bg-red-50 hover:bg-crm-primary hover:text-white transition flex items-center gap-1.5"><i class="fas fa-plus text-[10px]"></i> Add New</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+          <table class="w-full crm-table" style="table-layout:fixed">
+            <thead><tr>
+              <th style="width:12%">Sr.</th>
+              <th style="width:53%">Title</th>
+              <th style="width:35%">Actions</th>
+            </tr></thead>
+            <tbody id="yscTitlesTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ YUVA SABHA-C ============ -->
+    <div id="yscView" class="hidden fade-in">
+      <div class="flex items-center justify-between mb-4 print:hidden">
+        <button onclick="switchModule('ysc')" class="text-sm text-crm-textMuted hover:text-crm-primary flex items-center gap-1.5">
+          <i class="fas fa-arrow-left text-xs"></i> Back to List
+        </button>
+        <button id="yscPrintPdfBtn" onclick="printYscContent()" class="px-4 py-2 rounded-lg text-sm font-medium border border-crm-border hover:bg-slate-50 transition flex items-center gap-2">
+          <i class="fas fa-file-pdf text-xs"></i> Download / Print PDF
+        </button>
+      </div>
+      <div id="yscPageKaryakar"></div>
+      <div id="yscPageDinacharya" class="hidden"></div>
+      <div id="yscPagePoshak" class="hidden"></div>
+      <div id="yscPageVali" class="hidden"></div>
+      <div id="yscPageCustom" class="hidden"></div>
+
+      <div id="yscListTab" class="hidden">
+        <div class="flex justify-between items-center mb-4 screen-only">
+          <p class="text-xs text-crm-textMuted">● માર્ક કરેલા વ્યક્તિ વધારાની સભા/પ્રવચન લે છે</p>
+          <div class="flex gap-2">
+            <button onclick="addYscRow('main')" class="px-3 py-2 rounded-lg text-xs font-medium text-crm-primary bg-red-50 hover:bg-crm-primary hover:text-white transition flex items-center gap-1.5"><i class="fas fa-plus text-[10px]"></i> Add Row</button>
+            <button onclick="saveYscList()" class="px-4 py-2 rounded-lg text-sm font-medium text-white bg-crm-primary hover:bg-crm-primaryHover shadow-crm flex items-center gap-2"><i class="fas fa-check-circle text-xs"></i> Save</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden ysc-print-card">
+          <div class="table-responsive-wrapper overflow-x-auto">
+            <table class="w-full crm-table ysc-print-table">
+              <thead><tr><th style="width:60px">Sr.</th><th>1 કલાક માટે સભા લેનાર</th><th>30 મિનીટ માટે પ્રવચન</th></tr></thead>
+              <tbody id="yscMainTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-6 mb-3">
+          <h3 class="text-sm font-semibold text-crm-textDark">5-10-15 મિનીટ માટેના પ્રવચન</h3>
+          <button onclick="addYscRow('short')" class="screen-only px-3 py-2 rounded-lg text-xs font-medium text-crm-primary bg-red-50 hover:bg-crm-primary hover:text-white transition flex items-center gap-1.5"><i class="fas fa-plus text-[10px]"></i> Add Row</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden ysc-print-card">
+          <div class="table-responsive-wrapper overflow-x-auto">
+            <table class="w-full crm-table ysc-print-table">
+              <thead><tr><th style="width:60px">Sr.</th><th>નામ</th><th style="width:60px" class="screen-only"></th></tr></thead>
+              <tbody id="yscShortTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="treeView" class="hidden fade-in">
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border p-6" id="treeContainer"></div>
+    </div>
+
+    <div id="sevaSamitiListView" class="hidden fade-in">
+      <div style="max-width:850px;margin:0 auto">
+        <div class="flex justify-end mb-4">
+          <button onclick="promptNewSevaForm()" class="px-4 py-2 rounded-lg text-sm font-medium text-white bg-crm-primary hover:bg-crm-primaryHover shadow-crm flex items-center gap-2">
+            <i class="fas fa-plus text-xs"></i> Add New Form
+          </button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+          <table class="w-full crm-table" style="table-layout:fixed">
+            <thead><tr>
+              <th style="width:10%">Sr.</th>
+              <th style="width:38%">Form Name</th>
+              <th style="width:17%">Total Samiti</th>
+              <th style="width:35%">Actions</th>
+            </tr></thead>
+            <tbody id="sevaFormsTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SEVA SAMITI ============ -->
+    <!-- ============ CHANGE PASSWORD ============ -->
+    <div id="changePasswordView" class="hidden fade-in">
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border p-10 max-w-2xl mx-auto">
+        <div class="form-field mb-6">
+          <label class="flex items-center gap-2 mb-1.5">Old Password <i id="cpOldCheckIcon" class="fas fa-check-circle text-emerald-500 hidden"></i></label>
+          <div class="relative">
+            <input type="password" id="cpOldPassword" oninput="validateOldPassword()" placeholder="Enter your current password" class="pr-11 py-3 text-base">
+            <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('cpOldPassword', this)"></i>
+          </div>
+        </div>
+
+        <div class="form-field mb-6">
+          <label class="mb-1.5 block">New Password</label>
+          <div class="relative">
+            <input type="password" id="cpNewPassword" placeholder="Enter new password" class="pr-11 py-3 text-base">
+            <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('cpNewPassword', this)"></i>
+          </div>
+        </div>
+
+        <div class="form-field mb-2">
+          <label class="mb-1.5 block">Confirm New Password</label>
+          <div class="relative">
+            <input type="password" id="cpConfirmPassword" oninput="validateCpConfirm()" placeholder="Re-enter new password" class="pr-11 py-3 text-base">
+            <i class="fas fa-eye cp-toggle-eye" onclick="toggleCpVisibility('cpConfirmPassword', this)"></i>
+          </div>
+        </div>
+        <p id="cpConfirmError" class="hidden text-xs text-red-600 mb-6">Passwords do not match.</p>
+
+        <button onclick="submitChangePassword()" class="w-full bg-crm-primary hover:bg-crm-primaryHover text-white text-base font-semibold py-3.5 rounded-lg shadow-crm transition mt-4">Change Password</button>
+
+        <p class="text-center mt-5"><a href="#" onclick="showForgotPasswordInfo(); return false;" class="text-sm text-crm-primary hover:underline">Forgot Password?</a></p>
+      </div>
+
+      
+    </div>
+
+    <!-- ============ SEVA SAMITI — LIST OF FORMS ============ -->
+    <!-- ============ ORGANIZATION TREE ============ -->
+    <!-- ============ YUVA SABHA-C — LIST OF TITLES ============ -->
+    <div id="yscListView" class="hidden fade-in">
+      <div style="max-width:680px;margin:0 auto">
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+          <table class="w-full crm-table" style="table-layout:fixed">
+            <thead><tr>
+              <th style="width:12%">Sr.</th>
+              <th style="width:53%">Title</th>
+              <th style="width:35%">Actions</th>
+            </tr></thead>
+            <tbody id="yscTitlesTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ YUVA SABHA-C ============ -->
+    <div id="yscView" class="hidden fade-in">
+      <div class="flex items-center justify-between mb-4 print:hidden">
+        <button onclick="switchModule('ysc')" class="text-sm text-crm-textMuted hover:text-crm-primary flex items-center gap-1.5">
+          <i class="fas fa-arrow-left text-xs"></i> Back to List
+        </button>
+        <button id="yscPrintPdfBtn" onclick="printYscContent()" class="px-4 py-2 rounded-lg text-sm font-medium border border-crm-border hover:bg-slate-50 transition flex items-center gap-2">
+          <i class="fas fa-file-pdf text-xs"></i> Download / Print PDF
+        </button>
+      </div>
+      <div id="yscPageKaryakar"></div>
+      <div id="yscPageDinacharya" class="hidden"></div>
+      <div id="yscPagePoshak" class="hidden"></div>
+      <div id="yscPageVali" class="hidden"></div>
+
+      <div id="yscListTab" class="hidden">
+        <div class="flex justify-between items-center mb-4 screen-only">
+          <p class="text-xs text-crm-textMuted">● માર્ક કરેલા વ્યક્તિ વધારાની સભા/પ્રવચન લે છે</p>
+          <div class="flex gap-2">
+            <button onclick="addYscRow('main')" class="px-3 py-2 rounded-lg text-xs font-medium text-crm-primary bg-red-50 hover:bg-crm-primary hover:text-white transition flex items-center gap-1.5"><i class="fas fa-plus text-[10px]"></i> Add Row</button>
+            <button onclick="saveYscList()" class="px-4 py-2 rounded-lg text-sm font-medium text-white bg-crm-primary hover:bg-crm-primaryHover shadow-crm flex items-center gap-2"><i class="fas fa-check-circle text-xs"></i> Save</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden ysc-print-card">
+          <div class="table-responsive-wrapper overflow-x-auto">
+            <table class="w-full crm-table ysc-print-table">
+              <thead><tr><th style="width:60px">Sr.</th><th>1 કલાક માટે સભા લેનાર</th><th>30 મિનીટ માટે પ્રવચન</th></tr></thead>
+              <tbody id="yscMainTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-6 mb-3">
+          <h3 class="text-sm font-semibold text-crm-textDark">5-10-15 મિનીટ માટેના પ્રવચન</h3>
+          <button onclick="addYscRow('short')" class="screen-only px-3 py-2 rounded-lg text-xs font-medium text-crm-primary bg-red-50 hover:bg-crm-primary hover:text-white transition flex items-center gap-1.5"><i class="fas fa-plus text-[10px]"></i> Add Row</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden ysc-print-card">
+          <div class="table-responsive-wrapper overflow-x-auto">
+            <table class="w-full crm-table ysc-print-table">
+              <thead><tr><th style="width:60px">Sr.</th><th>નામ</th><th style="width:60px" class="screen-only"></th></tr></thead>
+              <tbody id="yscShortTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="treeView" class="hidden fade-in">
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border p-6" id="treeContainer"></div>
+    </div>
+
+    <div id="sevaSamitiListView" class="hidden fade-in">
+      <div style="max-width:850px;margin:0 auto">
+        <div class="flex justify-end mb-4">
+          <button onclick="promptNewSevaForm()" class="px-4 py-2 rounded-lg text-sm font-medium text-white bg-crm-primary hover:bg-crm-primaryHover shadow-crm flex items-center gap-2">
+            <i class="fas fa-plus text-xs"></i> Add New Form
+          </button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+          <table class="w-full crm-table" style="table-layout:fixed">
+            <thead><tr>
+              <th style="width:10%">Sr.</th>
+              <th style="width:38%">Form Name</th>
+              <th style="width:17%">Total Samiti</th>
+              <th style="width:35%">Actions</th>
+            </tr></thead>
+            <tbody id="sevaFormsTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ REPORTING — LIST ============ -->
+    <div id="reportingListView" class="hidden fade-in">
+      <div style="max-width:820px;margin:0 auto">
+        <div class="flex items-center justify-end mb-4">
+          <button onclick="createNewReport()" class="px-4 py-2 bg-crm-primary hover:bg-crm-primaryHover text-white rounded-lg text-sm font-medium shadow-sm transition-all flex items-center gap-2">
+            <i class="fas fa-plus"></i> Add New Report
+          </button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+          <table class="w-full crm-table" style="table-layout:fixed">
+            <thead><tr>
+              <th style="width:8%">Sr.</th>
+              <th style="width:38%">Title</th>
+              <th style="width:16%">Date</th>
+              <th style="width:13%">Attendance</th>
+              <th style="width:25%">Actions</th>
+            </tr></thead>
+            <tbody id="reportsTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ REPORTING — EDITOR ============ -->
+    <div id="reportingEditorView" class="hidden fade-in">
+      <div id="reportFloatingBtns" class="print:hidden" style="position:fixed;bottom:26px;right:26px;z-index:80;display:flex;flex-direction:column;gap:10px">
+        <button onclick="saveCurrentReport()" title="Save" style="width:52px;height:52px;border-radius:50%;background:#1f8a52;color:#fff;border:none;font-size:19px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.25)"><i class="fas fa-check-circle"></i></button>
+        <button onclick="previewReport()" title="Preview" style="width:52px;height:52px;border-radius:50%;background:#fff;color:var(--maroon);border:2px solid var(--maroon);font-size:19px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.2)"><i class="fas fa-eye"></i></button>
+        <button onclick="downloadReportPdf()" title="Download PDF" style="width:52px;height:52px;border-radius:50%;background:var(--maroon);color:#fff;border:none;font-size:19px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.25)"><i class="fas fa-file-pdf"></i></button>
+      </div>
+      <div style="max-width:820px;margin:0 auto">
+        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+          <button onclick="switchModule('reporting')" class="text-sm text-crm-textMuted hover:text-crm-primary flex items-center gap-1.5">
+            <i class="fas fa-arrow-left text-xs"></i> Back to Reports
+          </button>
+          <div class="flex items-center gap-2">
+            <button onclick="previewReport()" class="px-4 py-2 rounded-lg text-sm font-medium border border-crm-border hover:bg-slate-50 transition flex items-center gap-2">
+              <i class="fas fa-eye text-xs"></i> Preview
+            </button>
+            <button onclick="saveCurrentReport()" class="px-4 py-2 bg-crm-primary hover:bg-crm-primaryHover text-white rounded-lg text-sm font-medium shadow-sm transition-all flex items-center gap-2">
+              <i class="fas fa-check-circle text-xs"></i> Save Report
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-crm border border-crm-border p-6 mb-4">
+          <h3 class="section-header"><i class="fas fa-info-circle text-blue-500 mr-1 text-sm"></i> Meeting Details</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-2">
+            <div class="rec-field"><label>Title</label><input id="repTitle" type="text" placeholder="સહજાનંદી યુવાસભા – C"></div>
+            <div class="rec-field">
+              <label>Title Alignment</label>
+              <div class="flex gap-2">
+                <button type="button" id="titleAlignBtn_left" onclick="setTitleAlign('left')" class="flex-1 py-2 rounded-lg text-xs border border-crm-border"><i class="fas fa-align-left"></i></button>
+                <button type="button" id="titleAlignBtn_center" onclick="setTitleAlign('center')" class="flex-1 py-2 rounded-lg text-xs border border-crm-border"><i class="fas fa-align-center"></i></button>
+                <button type="button" id="titleAlignBtn_right" onclick="setTitleAlign('right')" class="flex-1 py-2 rounded-lg text-xs border border-crm-border"><i class="fas fa-align-right"></i></button>
+              </div>
+            </div>
+            <div class="rec-field">
+              <label>Date</label>
+              <div class="ddmy-wrap">
+                <input type="hidden" id="repDate" value="">
+                <input type="text" id="repDateDisplay" class="ddmy-display" readonly placeholder="DD/MM/YYYY" onclick="openDatePicker(this)" style="width:100%">>
+                <i class="fas fa-calendar-alt ddmy-icon"></i>
+              </div>
+            </div>
+            <div class="rec-field"><label>Time</label><input id="repTime" type="text" placeholder="રાત્રે ૮:૩૦ થી ૧૦:૦૦"></div>
+            <div class="rec-field"><label>Speaker (વક્તા)</label><input id="repSpeaker" type="text" placeholder="વક્તાનું નામ"></div>
+            <div class="rec-field"><label>Attendance (ઉપસ્થિતિ)</label><input id="repAttendance" type="text" placeholder="૯૧ યુવાનો"></div>
+            <div class="rec-field"><label>Subject (વિષય)</label><input id="repSubject" type="text" placeholder="વિષય"></div>
+          </div>
+          <div id="repMetaImageControls"></div>
+        </div>
+
+        <div id="repSectionsContainer"></div>
+
+        <div id="repAddSectionBtns" class="flex gap-3 mb-6"></div>
+
+        <div id="repAttendanceTableContainer"></div>
+      </div>
+    </div>
+
+    <!-- ============ SEVA SAMITI ============ -->
+    <div id="sevaSamitiView" class="hidden fade-in">
+      <div class="flex items-center justify-between mb-4 print:hidden">
+        <button onclick="switchModule('sevasamiti')" class="text-sm text-crm-textMuted hover:text-crm-primary flex items-center gap-1.5">
+          <i class="fas fa-arrow-left text-xs"></i> Back to Forms
+        </button>
+        <span class="text-sm font-semibold text-crm-textDark" id="sevaFormNameHeading"></span>
+        <button onclick="printSevaSamiti()" class="px-4 py-2 rounded-lg text-sm font-medium border border-crm-border hover:bg-slate-50 transition flex items-center gap-2">
+          <i class="fas fa-file-pdf text-xs"></i> Download / Print PDF
+        </button>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border p-6" id="sevaSamitiCard">
+        <div id="sevaSamitiPrintArea">
+          <div class="text-center mb-3">
+            <div id="sevaShreeHariWrap" class="text-sm text-crm-textMuted"></div>
+            <div id="sevaTitleWrap" class="text-lg font-bold text-crm-textDark"></div>
+          </div>
+          <div id="sevaFooterArea" class="text-center text-xs mb-4 pb-3 border-b border-slate-300"></div>
+          <div class="table-responsive-wrapper overflow-x-auto">
+            <table class="w-full border-collapse seva-table">
+              <thead>
+                <tr>
+                  <th style="width:4%">ક્રમ</th>
+                  <th style="width:17%">સમિતિનું નામ</th>
+                  <th style="width:26%">મુખ્ય સ્વયંસેવક</th>
+                  <th style="width:13%">મોબાઈલ</th>
+                  <th style="width:26%">સહાયક સ્વયંસેવક</th>
+                  <th style="width:14%">મોબાઈલ</th>
+                </tr>
+              </thead>
+              <tbody id="sevaSamitiTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center mt-4 print:hidden">
+        <button id="sevaAddBtn" onclick="addSevaCommittee()" class="px-4 py-2 rounded-lg text-sm font-medium text-crm-primary bg-red-50 hover:bg-crm-primary hover:text-white transition flex items-center gap-2">
+          <i class="fas fa-plus text-xs"></i> Add New
+        </button>
+        <button id="sevaSaveBtn" onclick="saveSevaSamiti()" class="px-5 py-2 rounded-lg text-sm font-medium text-white bg-crm-primary hover:bg-crm-primaryHover shadow-crm flex items-center gap-2">
+          <i class="fas fa-check-circle text-xs"></i> Save Details
+        </button>
+      </div>
+
+      <datalist id="sevaVolunteerDatalist"></datalist>
+
+      
+    </div>
+
+    <!-- ============ ACTIVITY DETAIL MODAL ============ -->
+    <div id="activityDetailModal" class="hidden fixed inset-0 z-[95] bg-slate-900/40 flex items-center justify-center p-6">
+      <div id="activityDetailModalContent" class="w-full max-w-lg bg-white rounded-2xl shadow-xl border border-slate-100 p-6 max-h-[80vh] overflow-y-auto" style="position:relative;transform:scale(1);opacity:1;transition:transform .15s ease, opacity .15s ease;">
+        <button onclick="closeActivityDetail()" title="Close" style="position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;background:#fff;color:#555;border:1px solid #e5e5e5;font-size:13px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center"><i class="fas fa-times"></i></button>
+        <h3 class="text-sm font-semibold text-slate-800 mb-1 pr-8" id="activityDetailTitle">Record Updated</h3>
+        <p class="text-xs text-crm-textMuted mb-4" id="activityDetailSubtitle"></p>
+        <div id="activityDetailBody"></div>
+      </div>
+    </div>
+
+    <!-- ============ SUBMISSION CONFIRMATION MODAL (Poshak/Yuva edit submitted) ============ -->
+    <div id="submitConfirmModal" class="hidden fixed inset-0 z-[96] bg-slate-900/50 flex items-center justify-center p-6">
+      <div id="submitConfirmModalContent" class="w-full max-w-sm bg-white rounded-2xl shadow-2xl p-7 text-center" style="transform:scale(1);opacity:1;transition:transform .15s ease, opacity .15s ease;">
+        <div class="w-14 h-14 rounded-full bg-emerald-50 text-emerald-500 flex items-center justify-center text-2xl mx-auto mb-4">
+          <i class="fas fa-check"></i>
+        </div>
+        <h3 class="text-base font-semibold text-crm-textDark mb-2">Thank you!</h3>
+        <p class="text-sm text-crm-textMuted mb-1">Your edit has been submitted successfully.</p>
+        <p class="text-sm text-crm-textMuted mb-5">Once the admin approves it, your changes will appear across the dashboard.</p>
+        <button onclick="closeSubmitConfirm()" class="px-6 py-2 rounded-lg text-sm font-medium text-white bg-crm-primary hover:bg-crm-primaryHover shadow-crm">Okay</button>
+      </div>
+    </div>
+
+    <!-- ============ TABLE VIEW ============ -->
+    <div id="tableView" class="fade-in">
+      <div class="bg-white rounded-2xl shadow-crm border border-crm-border overflow-hidden">
+        <div class="flex justify-end px-5 pt-4" id="pageSizeTopWrap"></div>
+        <div class="table-responsive-wrapper overflow-x-auto">
+          <table class="w-full crm-table">
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+        <div id="pagination" class="flex flex-col items-center gap-2 px-5 py-5 border-t border-crm-border text-xs text-crm-textMuted"></div>
+        <div class="flex justify-end px-5 pb-4" id="pageSizeBottomWrap"></div>
+      </div>
+    </div>
+
+    <!-- ============ RECORD PAGE (Add / Edit / View — one shared layout) ============ -->
+    <div id="recordView" class="hidden fade-in pb-16">
+      <div class="rec-header">
+        <div class="flex items-center gap-4">
+          <button onclick="closeRecord()" class="w-9 h-9 rounded-lg bg-slate-50 text-slate-500 hover:bg-slate-100 hover:text-crm-primary flex items-center justify-center transition-all">
+            <i class="fas fa-arrow-left text-sm"></i>
+          </button>
+          <div id="recAvatarWrap" class="hidden"></div>
+          <div>
+            <h2 class="text-base font-semibold text-slate-800" id="recTitle">Add New Record</h2>
+            <p class="text-[11px] font-medium mt-0.5" style="color:var(--maroon)" id="recSubtitle">Module: Yuva Sabha Members</p>
+          </div>
+        </div>
+        <div class="flex gap-3" id="recHeaderBtns"></div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-4 sm:p-8">
+        <div class="page-tabs" id="recTabs"></div>
+        <div id="recBody"></div>
+      </div>
+    </div>
+
+  </main>
+</div>
+</div><!-- /#appRoot -->
+
+<!-- Delete Modal -->
+<!-- Age Group Popup — click a bar on the Dashboard's Age chart -->
+<div id="ageGroupPopup" class="hidden fixed inset-0 z-[96] bg-slate-900/40 flex items-center justify-center p-6" onclick="if(event.target===this) closeAgeGroupPopup()">
+  <div class="w-full max-w-sm bg-white rounded-2xl shadow-xl border border-slate-100 p-5 max-h-[80vh] flex flex-col">
+    <div class="flex items-center justify-between mb-3">
+      <h3 class="text-sm font-semibold text-slate-800" id="ageGroupPopupTitle">Age</h3>
+      <button type="button" onclick="closeAgeGroupPopup()" class="text-slate-400 hover:text-slate-600 text-lg leading-none"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div id="ageGroupPopupList" class="flex-1 overflow-y-auto flex flex-col gap-1.5 pr-1"></div>
+  </div>
+</div>
+
+<div id="deleteModal" class="hidden fixed inset-0 z-[97] bg-slate-900/40 flex items-center justify-center p-6">
+  <div id="deleteModalContent" class="w-full max-w-sm bg-white rounded-2xl shadow-xl border border-slate-100 p-6" style="transform:scale(1);opacity:1;transition:transform .15s ease, opacity .15s ease;">
+    <div class="flex items-center gap-3 mb-4">
+      <div id="deleteModalIconWrap" class="w-11 h-11 rounded-xl bg-red-50 text-red-500 flex items-center justify-center text-lg shrink-0"><i id="deleteModalIcon" class="fas fa-trash-alt"></i></div>
+      <div>
+        <h3 class="text-sm font-semibold text-slate-800" id="deleteModalTitle">Delete this member?</h3>
+        <p class="text-[11px] text-slate-400" id="deleteModalSubtitle">This action cannot be undone.</p>
+      </div>
+    </div>
+    <div class="flex justify-end gap-3 mt-2">
+      <button id="deleteModalLeaveBtn" onclick="" class="hidden px-4 py-2 rounded-lg text-sm font-medium text-slate-500 border border-slate-200 hover:bg-slate-50">Leave Unsaved</button>
+      <button onclick="closeDeleteModal()" class="px-4 py-2 rounded-lg text-sm font-medium text-crm-textMuted hover:bg-slate-100">Cancel</button>
+      <button id="deleteModalConfirmBtn" onclick="confirmDelete()" class="px-4 py-2 rounded-lg text-sm font-medium text-white bg-red-600 hover:bg-red-700">Delete</button>
+    </div>
+  </div>
+</div>
+
+<!-- Text Prompt Modal (replaces native browser prompt()) -->
+<div id="textPromptModal" class="hidden fixed inset-0 z-[400] bg-slate-900/40 flex items-center justify-center p-6">
+  <div id="textPromptModalContent" class="w-full max-w-sm bg-white rounded-2xl shadow-xl border border-slate-100 p-6" style="transform:scale(1);opacity:1;transition:transform .15s ease, opacity .15s ease;">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-11 h-11 rounded-xl bg-crm-primary/10 text-crm-primary flex items-center justify-center text-lg shrink-0"><i class="fas fa-pen"></i></div>
+      <div>
+        <h3 class="text-sm font-semibold text-slate-800" id="textPromptTitle">Enter a value</h3>
+        <p class="text-[11px] text-slate-400" id="textPromptSubtitle"></p>
+      </div>
+    </div>
+    <input id="textPromptInput" type="text" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-crm-primary/30 focus:border-crm-primary mb-1" placeholder="" onkeydown="if(event.key==='Enter'){event.preventDefault(); confirmTextPrompt();} else if(event.key==='Escape'){closeTextPromptModal();}">
+    <p id="textPromptError" class="hidden text-[11px] text-red-500 mt-1">Please enter a value.</p>
+    <div class="flex justify-end gap-3 mt-4">
+      <button onclick="closeTextPromptModal()" class="px-4 py-2 rounded-lg text-sm font-medium text-crm-textMuted hover:bg-slate-100">Cancel</button>
+      <button onclick="confirmTextPrompt()" class="px-4 py-2 rounded-lg text-sm font-medium text-white bg-crm-primary hover:opacity-90">OK</button>
+    </div>
+  </div>
+</div>
+
+<div id="reportPreviewModal" class="fixed inset-0 print:hidden" style="display:none;z-index:997;background:#f7f2f3;overflow-y:auto" onclick="if(event.target===this) closeReportPreview()">
+  <div style="position:fixed;top:16px;right:16px;z-index:2;display:flex;gap:8px">
+    <button onclick="downloadReportPdf()" title="Download PDF" style="width:40px;height:40px;border-radius:50%;background:var(--maroon);color:#fff;border:none;font-size:15px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)"><i class="fas fa-file-pdf"></i></button>
+    <button onclick="closeReportPreview()" title="Close" style="width:40px;height:40px;border-radius:50%;background:#fff;color:#333;border:1px solid #ddd;font-size:15px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.15)"><i class="fas fa-times"></i></button>
+  </div>
+  <div id="reportPreviewBody" class="rpt-doc"></div>
+</div>
+<div id="reportPrintArea" class="hidden"></div>
+<div id="photoLightbox" class="fixed inset-0 z-[998] items-center justify-center p-6" style="display:none;background:rgba(10,4,5,.9)" onclick="closePhotoLightbox()">
+  <div style="position:relative;max-width:92vw;max-height:88vh">
+    <img id="photoLightboxImg" src="" alt="Photo" onclick="event.stopPropagation()" style="display:block;max-width:92vw;max-height:88vh;width:auto;height:auto;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5)">
+    <div onclick="event.stopPropagation()" style="position:absolute;top:-46px;right:0;display:flex;gap:10px">
+      <button id="photoLightboxDownload" onclick="downloadLightboxImage()" title="Download" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.15);color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;border:none;cursor:pointer"><i class="fas fa-download"></i></button>
+      <button onclick="closePhotoLightbox()" title="Close" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.15);color:#fff;border:none;cursor:pointer"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+</div>
+<div id="birthdayModal" class="fixed inset-0 z-[999] items-center justify-center p-4" style="display:none;background:rgba(42,16,19,.55)">
+  <div class="bg-white rounded-2xl shadow-2xl max-w-sm w-full p-6 text-center" style="border:1px solid #f2dfe2;max-height:90vh;overflow-y:auto;margin:auto;position:relative">
+    <button onclick="closeBirthdayModal()" title="Close" style="position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;background:#fff;color:#555;border:1px solid #e5e5e5;font-size:13px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.12);display:flex;align-items:center;justify-content:center"><i class="fas fa-times"></i></button>
+    <div class="mx-auto mb-3 flex items-center justify-center" style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#c8952a,#e0ac3e);font-size:26px;color:#fff">🎂</div>
+    <h3 class="font-bold text-lg text-crm-textDark mb-1" id="birthdayModalTitle">Happy Birthday!</h3>
+    <div id="birthdayModalBody" class="text-sm text-crm-textMuted mb-5 space-y-1.5"></div>
+  </div>
+</div>
+6:["$","div",null,{"id":"app-root","style":{"display":"contents"},"dangerouslySetInnerHTML":{"__html":"$c"}}]
+d:Tb72,/* ===== Instant login page =====
+   The full app (≈1 MB of code + the members seed file) takes a moment to download.
+   The login page does not need any of it to be SHOWN, so if nobody is logged in on
+   this device, show the login page right now instead of the full-screen
+   "Loading Yuva Sabha Dashboard…" overlay. (If someone IS logged in, the overlay stays
+   until their dashboard is ready, exactly as before.) */
+(function(){
+  function hasSession(){
+    try{ var a = JSON.parse(localStorage.getItem('yuvaSabhaSession')||'null'); if(a && a.role) return true; }catch(e){}
+    try{ var b = JSON.parse(sessionStorage.getItem('yuvaSabhaSession')||'null'); if(b && b.role) return true; }catch(e){}
+    try{ return document.cookie.split('; ').some(function(x){ return x.indexOf('yuvaSabhaSession=') === 0 && x.length > 'yuvaSabhaSession='.length; }); }catch(e){}
+    return false;
+  }
+  if(!hasSession()){
+    var l = document.getElementById('initLoadingScreen'); if(l) l.remove();
+    var a = document.getElementById('authScreen'); if(a) a.classList.remove('hidden');
+  }
+})();
+// Clicks that happen before the app code has finished downloading are remembered
+// (last one per button) and run automatically the moment the real code is ready.
+window.__authQueue = {};
+function doLogin(){ window.__authQueue.doLogin = [].slice.call(arguments); }
+function doSignup(){ window.__authQueue.doSignup = [].slice.call(arguments); }
+function showForgotPasswordInfo(){ window.__authQueue.showForgotPasswordInfo = [].slice.call(arguments); }
+// Pure show/hide helpers — safe to run immediately (the full app redefines them identically).
+function toggleCpVisibility(inputId, iconEl){
+  var input = document.getElementById(inputId); var showing = input.type==='text';
+  input.type = showing ? 'password' : 'text';
+  iconEl.classList.toggle('fa-eye', showing); iconEl.classList.toggle('fa-eye-slash', !showing);
+}
+function onLoginRoleChange(){
+  var isAdmin = document.getElementById('loginRole').value === 'admin';
+  document.getElementById('adminPasswordWrap').classList.toggle('hidden', !isAdmin);
+  document.getElementById('loginEmailWrap').classList.toggle('hidden', isAdmin);
+  document.getElementById('loginPasswordWrap').classList.toggle('hidden', isAdmin);
+}
+function switchAuthTab(tab){
+  var t = function(id, cls, on){ document.getElementById(id).classList.toggle(cls, on); };
+  t('authSignin','hidden', tab!=='signin'); t('authSignup','hidden', tab!=='signup');
+  t('authTabSignin','text-crm-primary', tab==='signin'); t('authTabSignin','border-crm-primary', tab==='signin');
+  t('authTabSignin','text-crm-textMuted', tab!=='signin'); t('authTabSignin','border-transparent', tab!=='signin');
+  t('authTabSignup','text-crm-primary', tab==='signup'); t('authTabSignup','border-crm-primary', tab==='signup');
+  t('authTabSignup','text-crm-textMuted', tab!=='signup'); t('authTabSignup','border-transparent', tab!=='signup');
+}
+7:["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}]
+8:["$","$Le",null,{}]
+9:["$","$Lf",null,{"children":["$L10",["$","$L11",null,{"promise":"$@12"}]]}]
+a:["$","$1","h",{"children":[null,[["$","$L13",null,{"children":"$L14"}],null],["$","$L15",null,{"children":["$","div",null,{"hidden":true,"children":["$","$16",null,{"fallback":null,"children":"$L17"}]}]}]]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#5a0616"}]]
+10:null
+18:I[622,[],"IconMark"]
+12:{"metadata":[["$","title","0",{"children":"Yuva Sabha — Member Registry Dashboard"}],["$","link","1",{"rel":"manifest","href":"/manifest.json","crossOrigin":"$undefined"}],["$","meta","2",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","3",{"name":"apple-mobile-web-app-title","content":"Yuva Sabha"}],["$","meta","4",{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}],["$","link","5",{"rel":"icon","href":"/images/img-0bd7249290.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/images/img-319bccc2f4.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/images/img-1699d00420.png","sizes":"180x180"}],["$","$L18","8",{}]],"error":null,"digest":"$undefined"}
+17:"$12:metadata"

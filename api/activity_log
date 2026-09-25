@@ -1,0 +1,47 @@
+<?php
+require_once 'db.php';
+$pdo = getDB();
+$method = $_SERVER['REQUEST_METHOD'];
+
+// ------------------------------------------------------------
+// GET  /activity_log.php  -> list all activity (newest last)
+// POST /activity_log.php  -> log a new activity entry
+// DELETE /activity_log.php -> clear the entire log (admin only, from dashboard UI)
+// ------------------------------------------------------------
+
+if($method === 'GET'){
+  $stmt = $pdo->query("SELECT * FROM activity_log ORDER BY id ASC");
+  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  foreach($rows as &$r){
+    $r['changes'] = $r['changes'] ? json_decode($r['changes'], true) : null;
+    // created_at is stored as UTC (see POST below) — mark it explicitly as UTC ('Z')
+    // so the browser correctly converts it to the viewer's own local time.
+    $r['timestamp'] = str_replace(' ', 'T', $r['created_at']) . 'Z';
+  }
+  respond($rows);
+}
+
+if($method === 'POST'){
+  $b = readJsonBody();
+  $stmt = $pdo->prepare("INSERT INTO activity_log (role, actor_email, actor_name, action, changes, created_at) VALUES (?, ?, ?, ?, ?, ?)");
+  // Convert the client's ISO UTC timestamp (e.g. 2026-08-06T09:18:00.000Z) into MySQL DATETIME format,
+  // storing it AS UTC explicitly so display is consistent regardless of the server's own timezone setting.
+  $clientTimestamp = $b['timestamp'] ?? null;
+  $utcDateTime = $clientTimestamp ? gmdate('Y-m-d H:i:s', strtotime($clientTimestamp)) : gmdate('Y-m-d H:i:s');
+  $stmt->execute([
+    $b['role'] ?? 'yuva',
+    $b['mobile'] ?? '',
+    $b['name'] ?? '',
+    $b['action'] ?? '',
+    isset($b['changes']) ? json_encode($b['changes']) : null,
+    $utcDateTime
+  ]);
+  respond(['success' => true]);
+}
+
+if($method === 'DELETE'){
+  $pdo->exec("TRUNCATE TABLE activity_log");
+  respond(['success' => true]);
+}
+
+respond(['error' => 'Method not allowed'], 405);
